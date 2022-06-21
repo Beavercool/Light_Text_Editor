@@ -49,7 +49,7 @@ namespace TextEditor
                 SaveAsButton.IsEnabled = Text.Text != "";
                 FileName.Text ="File name: " +  openFileDialog.SafeFileName;
 
-
+                this.Title = openFileDialog.SafeFileName;
 
             }
         }
@@ -71,7 +71,7 @@ namespace TextEditor
                 FileIsSave = true;
                 FileName.Text = "File name: " + saveFileDialog.SafeFileName;
 
-
+                this.Title = saveFileDialog.SafeFileName;
             }
 
         }
